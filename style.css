@@ -562,6 +562,12 @@ textarea:focus {
 }
 
 @media screen and (max-width: 900px) {
+  header,
+  main,
+  footer {
+    display: none;
+  }
+
   .video-bg {
     z-index: 1000;
     opacity: 1;
@@ -571,6 +577,8 @@ textarea:focus {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
+    padding: 10px;
     z-index: 1001;
     position: fixed;
     top: 0;
@@ -580,12 +588,8 @@ textarea:focus {
   }
   .media h1 {
     font-size: 2rem;
+    letter-spacing: 0.1rem;
   }
-
-  .media p {
-    font-size: 1.6rem;
-  }
-
   .media-logo {
     width: 20rem;
   }
