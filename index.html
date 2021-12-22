@@ -25,15 +25,15 @@
           <span class="nav-list-item-line"></span>
         </li>
         <li class="nav-list-item">
-          <a href="#">Work</a>
+          <a href="#work">Work</a>
           <span class="nav-list-item-line"></span>
         </li>
         <li class="nav-list-item">
-          <a href="#">Profile</a>
+          <a href="#profile">Profile</a>
           <span class="nav-list-item-line"></span>
         </li>
         <li class="nav-list-item">
-          <a href="#">Contact</a>
+          <a href="#contact">Contact</a>
           <span class="nav-list-item-line"></span>
         </li>
       </ul>
@@ -85,7 +85,7 @@
         </div>
       </div>
     </section>
-    <section class="profile-hero block-hero block-padding">
+    <section id="profile" class="profile-hero block-hero block-padding">
       <div>
         <div class="profile-description">
           <h2>Profile</h2>
@@ -162,7 +162,7 @@
         </li>
       </ul>
     </section>
-    <section class="status-hero block-hero block-padding">
+    <section class="block-hero block-padding">
       <div class="status-hero-block">
         <div>
           <h3>Get in touch</h3>
@@ -176,44 +176,59 @@
         <img src="./image/contact-img.webp" alt="my status">
       </div>
     </section>
-    <section>
-      <div>
+    <section id="contact" class="contact">
+      <div class="contact-form block-padding">
         <form action="">
-          <div>
-            <div>
+          <div class="contact-form-row">
+            <div class="contact-form-row-field">
               <label for="firstName">First Name</label>
               <input id="firstName" type="text">
             </div>
-            <div>
+            <div class="contact-form-row-field">
               <label for="lastName">Last Name</label>
               <input id="lastName" type="text">
             </div>
           </div>
-          <div>
-            <div>
+          <div class="contact-form-row">
+            <div class="contact-form-row-field" >
               <label for="email">Email*</label>
-              <input id="email" type="text">
+              <input id="email" type="email">
             </div>
-            <div>
+            <div class="contact-form-row-field">
               <label for="phone">Phone</label>
-              <input id="phone" type="number">
+              <input id="phone" type="tel">
             </div>
           </div>
-          <div>
+          <div class="contact-form-row-field">
             <label for="subject">Subject</label>
             <input id="subject" type="text">
           </div>
-          <div>
+          <div class="contact-form-row-field">
             <label for="message">Leave us a message...</label>
             <textarea id="message" name="message" cols="30" rows="10"></textarea>
           </div>
-          <button type="submit">Submit</button>
+          <button class="contact-form-submit" type="submit">Submit</button>
         </form>
       </div>
     </section>
+    <section class="contact-links">
+      <a href="mailto: ozarkonv@gmail.com">ozarkonv@gmail.com</a>
+      <ul>
+        <li><a href="#" target="_blank">github</a></li>
+        <li><a href="#" target="_blank">linkedin</a></li>
+        <li><a href="#" target="_blank">behance</a></li>
+        <li><a href="#" target="_blank">facebook</a></li>
+      </ul>
+    </section>
   </main>
-  <footer>
-
+  <footer class="footer">
+    <p>&copy Made by <span>Nazar</span> created with <a href="https://www.facebook.com/itca.courses" target="_blank">ITCA</a> </p>
   </footer>
+  <div class="media">
+    <div class="media-logo">
+      <img src="https://static.tildacdn.com/tild3963-3363-4238-b136-313830343864/Logo.svg" alt="ITCA Logo" />
+    </div>
+    <h1>Minimal width for this site is 600px</h1>
+  </div>
 </body>
 </html>
